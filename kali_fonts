@@ -1,0 +1,6 @@
+* Download and install the windows font
+
+$ apt-get install msttcorefonts
+
+* fix your cache font
+$ fc-cache -fv

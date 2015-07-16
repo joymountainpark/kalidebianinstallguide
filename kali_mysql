@@ -1,0 +1,3 @@
+*MySQL Start
+
+/etc/init.d/mysql start | stop | reload ...
