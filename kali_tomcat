@@ -1,0 +1,17 @@
+**Download latest tomcat
+
+**Unzip in tmp
+tar xvzf apache-tomcat*.tar.gz -C /tmp/
+
+**Change Ownership and Move to opt
+sudo su -c "chown -R root:root /tmp/apache-tomcat-7.0.63 && mv /tmp/apache-tomcat-7.0.63 /opt/apache-tomcat-7.0.63"
+
+
+**Staring Server
+/opt/apache-tomcat-7*/bin/startup.sh
+
+**Stopping Server
+/opt/apache-tomcat-7*/bin/shutdown.sh
+
+**Localhost Port
+localhost:8080
