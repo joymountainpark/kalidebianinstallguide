@@ -1,0 +1,19 @@
+**Download the lastest package from the website
+
+tar xvzf eclipse*.tar.gz -C /tmp/
+
+
+**Relocation
+sudo su -c "chown -R root:root /tmp/eclipse && mv /tmp/eclipse /opt/eclipse-mars"
+
+
+**Making Symlink
+
+sudo su -c "ln -s /opt/eclipse-luna/eclipse /usr/local/bin/eclipse-luna"
+
+**Bug Fix for closing when launching 
+export SWT_GTK3=0
+
+**Old version remove
+sudo apt-get autoremove eclipse*
+rm -r ~/.eclipse/
